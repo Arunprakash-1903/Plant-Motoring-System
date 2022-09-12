@@ -1,0 +1,96 @@
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius:5px;
+    
+}
+.card__container{
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    position: relative;
+    background-color: white;
+  
+}
+
+.outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7)  ;
+}
+#number{
+font-weight: 700;
+font-size: 20px;
+}
+.inner{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0,0,0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+span{
+    font-size: 20px;
+    font-weight: 300;
+}
+.main{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+svg{
+    position: absolute;
+top: 0px;
+left: 0px;
+}
+.circle-h{
+animation: anim 2s linear forwards;
+fill: none;
+stroke: url(#GradientColor);
+stroke-width: 20px;
+stroke-dasharray: 472;
+stroke-dashoffset: 472;
+}
+@keyframes anim{
+    100%{
+        /* --humidity:65; */
+        stroke-dashoffset:var(--humidity);
+    }
+}
+@keyframes anim2{
+    100%{
+        /* --humidity:65; */
+        stroke-dashoffset:var(--temp);
+    }
+}
+.circle-t{
+    animation: anim2 2s linear forwards;
+fill: none;
+stroke: url(#GradientColor);
+stroke-width: 20px;
+stroke-dasharray: 472;
+stroke-dashoffset: 472;
+
+}
+.label{
+    font-weight: 500;
+}
