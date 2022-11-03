@@ -16,4 +16,19 @@
     background-color: #efefef;
     height: 100vh;
 
+}   
+.btn{
+    width: 300px;
+    height: 50px;
+    padding: 10 px;
+    background-color:#12be71;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 40px;
+
+
+}
+.btn:hover{
+    background-color: #4ae39e;
 }
